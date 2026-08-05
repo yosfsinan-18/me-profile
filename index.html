@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links - VIP Profile</title>
+    <title>YUSEEF SINAN - VIP Profile</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            /* پاشبنەما ب وێنەیێ تە و فیلتەرێ تاریک و مات (VIP Background) */
+            /* پاشبنەما ب وێنەیێ تە و فیلتەرێ تاریک و مات (Blurred Background) */
             background-color: #030712;
             background-image: linear-gradient(rgba(3, 7, 18, 0.85), rgba(3, 7, 18, 0.92)), url('logo.png');
             background-size: cover;
@@ -28,13 +28,10 @@
         .container {
             width: 100%;
             max-width: 400px;
-            background: rgba(15, 23, 42, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-radius: 24px;
-            padding: 35px 20px;
-            box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            background: transparent; /* لابەرنا ڕەنگێ خلفەتا صندوقی دا تنێ وێنە و دوگمە بمینن */
+            border: none; /* ژێبرنا چوارچێوەی تەمامەن */
+            box-shadow: none;
+            padding: 20px 10px;
             text-align: center;
         }
         .profile-img {
@@ -48,10 +45,16 @@
         }
         h1 {
             font-size: 26px;
-            margin-bottom: 25px;
+            margin-bottom: 5px;
             color: #38bdf8;
             text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
             letter-spacing: 1px;
+        }
+        .sub-title {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
         }
         .links-list {
             display: flex;
@@ -64,7 +67,9 @@
             justify-content: space-between;
             padding: 14px 20px;
             border-radius: 14px;
-            background: rgba(30, 41, 59, 0.75);
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             color: #38bdf8;
             text-decoration: none;
             font-weight: 600;
@@ -84,7 +89,6 @@
             align-items: center;
             gap: 14px;
         }
-        /* ڕێکخستنا وێنەیێن پڕۆفایلێن د ناڤ دوگمەیان دا */
         .icon-img {
             width: 32px;
             height: 32px;
@@ -103,15 +107,16 @@
     </audio>
 
     <div class="container">
-        <!-- Main Website Logo / Profile Image -->
+        <!-- Main Profile Image -->
         <img src="logo.png" alt="Logo" class="profile-img">
-        <h1>Yuseef</h1>
+        <h1>YUSEEF SINAN</h1>
+        <div class="sub-title">&lt; MY PROFILE /&gt;</div>
 
         <div class="links-list">
             <!-- TikTok -->
             <a href="https://www.tiktok.com/@yuseef_surchi?_r=1&_t=ZS-98cYzDWJTVN" class="btn" target="_blank">
                 <div class="btn-content">
-                    <img src="tiktok.png" alt="TikTok Profile" class="icon-img">
+                    <img src="tiktok.png" alt="TikTok" class="icon-img">
                     <span>Join TikTok</span>
                 </div>
                 <span>→</span>
@@ -120,7 +125,7 @@
             <!-- Snapchat -->
             <a href="https://snapchat.com/t/6KjVProO" class="btn" target="_blank">
                 <div class="btn-content">
-                    <img src="snapchat.png" alt="Snapchat Profile" class="icon-img">
+                    <img src="snapchat.png" alt="Snapchat" class="icon-img">
                     <span>Join Snapchat</span>
                 </div>
                 <span>→</span>
