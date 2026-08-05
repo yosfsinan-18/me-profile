@@ -9,17 +9,11 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Courier New', Courier, monospace; /* شێوازێ فۆنتێ هاککەری */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            /* پاشبنەمايا ڕەش و سەوزێ تاری (Hacker / Matrix Style) */
-            background-color: #030703;
-            background-image: 
-                radial-gradient(circle at 50% 50%, rgba(0, 80, 0, 0.15) 0%, transparent 70%),
-                linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px);
-            background-size: 100% 100%, 25px 25px, 25px 25px;
-            color: #00ff66;
+            background-color: #030712;
+            color: #38bdf8;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,12 +23,12 @@
         .container {
             width: 100%;
             max-width: 400px;
-            background: rgba(5, 15, 5, 0.85);
+            background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
-            border-radius: 15px;
+            border-radius: 20px;
             padding: 30px 20px;
-            box-shadow: 0 0 30px rgba(0, 255, 100, 0.2);
-            border: 1px solid rgba(0, 255, 100, 0.3);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+            border: 1px solid rgba(56, 189, 248, 0.3);
             text-align: center;
         }
         .profile-img {
@@ -42,19 +36,19 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #00cc44;
+            border: 3px solid #38bdf8;
             margin-bottom: 15px;
-            box-shadow: 0 0 20px rgba(0, 255, 100, 0.4);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
         }
         h1 {
             font-size: 24px;
             margin-bottom: 5px;
-            color: #00ff66;
-            text-shadow: 0 0 10px rgba(0, 255, 100, 0.5);
+            color: #38bdf8;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
         }
         p {
             font-size: 14px;
-            color: #009933;
+            color: #94a3b8;
             margin-bottom: 25px;
         }
         .links-list {
@@ -67,20 +61,20 @@
             align-items: center;
             justify-content: space-between;
             padding: 12px 20px;
-            border-radius: 10px;
-            background: rgba(10, 30, 10, 0.8);
-            color: #00ff66;
+            border-radius: 12px;
+            background: rgba(30, 41, 59, 0.8);
+            color: #38bdf8;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            border: 1px solid rgba(0, 255, 100, 0.2);
+            border: 1px solid rgba(56, 189, 248, 0.2);
         }
         .btn:hover {
-            background: #00b33c;
-            color: #030703;
+            background: #38bdf8;
+            color: #030712;
             transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(0, 255, 100, 0.6);
-            border-color: #00ff66;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+            border-color: #38bdf8;
         }
         .btn-content {
             display: flex;
@@ -97,8 +91,8 @@
 </head>
 <body>
 
-    <!-- Background Music Audio Player -->
-    <audio autoplay loop>
+    <!-- Hidden Audio Player -->
+    <audio autoplay loop hidden>
         <source src="music.mp3" type="audio/mpeg">
     </audio>
 
