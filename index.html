@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links - Profile</title>
+    <title>My Links - VIP Profile</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,12 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
+            /* پاشبنەما ب وێنەیێ تە و فیلتەرێ تاریک و مات (VIP Background) */
             background-color: #030712;
+            background-image: linear-gradient(rgba(3, 7, 18, 0.85), rgba(3, 7, 18, 0.92)), url('logo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #38bdf8;
             display: flex;
             justify-content: center;
@@ -23,28 +28,30 @@
         .container {
             width: 100%;
             max-width: 400px;
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(12px);
-            border-radius: 20px;
-            padding: 30px 20px;
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
-            border: none; /* چوارچێوە تەمامەن هاتە لابەرن */
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 24px;
+            padding: 35px 20px;
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+            border: 1px solid rgba(56, 189, 248, 0.3);
             text-align: center;
         }
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #38bdf8;
             margin-bottom: 15px;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 15px; /* ڤالاھی کێماسی بۆ دەمێ نەبوونا تێکستا ژێر ناڤی */
+            font-size: 26px;
+            margin-bottom: 25px;
             color: #38bdf8;
-            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+            text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+            letter-spacing: 1px;
         }
         .links-list {
             display: flex;
@@ -55,32 +62,36 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 20px;
-            border-radius: 12px;
-            background: rgba(30, 41, 59, 0.8);
+            padding: 14px 20px;
+            border-radius: 14px;
+            background: rgba(30, 41, 59, 0.75);
             color: #38bdf8;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            border: 1px solid rgba(56, 189, 248, 0.2);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
         .btn:hover {
             background: #38bdf8;
             color: #030712;
             transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
             border-color: #38bdf8;
         }
         .btn-content {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
+        /* ڕێکخستنا وێنەیێن پڕۆفایلێن د ناڤ دوگمەیان دا */
         .icon-img {
-            width: 24px;
-            height: 24px;
-            object-fit: contain;
-            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #38bdf8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
         }
     </style>
 </head>
@@ -92,25 +103,24 @@
     </audio>
 
     <div class="container">
-        <!-- Main Website Logo -->
+        <!-- Main Website Logo / Profile Image -->
         <img src="logo.png" alt="Logo" class="profile-img">
         <h1>Yuseef</h1>
-        <!-- تێکستا My Profile هاتە ژێبرن -->
 
         <div class="links-list">
             <!-- TikTok -->
             <a href="https://www.tiktok.com/@yuseef_surchi?_r=1&_t=ZS-98cYzDWJTVN" class="btn" target="_blank">
                 <div class="btn-content">
-                    <svg class="icon-img" viewBox="0 0 24 24" fill="#38bdf8"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                    <img src="tiktok.png" alt="TikTok Profile" class="icon-img">
                     <span>Join TikTok</span>
                 </div>
                 <span>→</span>
             </a>
             
-            <!-- Snapchat (Correct Ghost Logo 👻) -->
+            <!-- Snapchat -->
             <a href="https://snapchat.com/t/6KjVProO" class="btn" target="_blank">
                 <div class="btn-content">
-                    <svg class="icon-img" viewBox="0 0 512 512" fill="#38bdf8"><path d="M256 32c-68.4 0-124 55.6-124 124 0 31.8 12.1 60.8 32 82.9-18.4 12.3-33.4 28.5-44 47.1-9.9 17.3-15.6 37.4-15.6 58.7 0 63.3 51.7 115 115 115h31.2c13.6 0 24.8 11.2 24.8 24.8s-11.2 24.8-24.8 24.8h-31.2c-91.1 0-164.6-73.5-164.6-164.6 0-31 8.8-60.1 24-84.7-18.6-25.1-29.8-56.5-29.8-90.6C72 75.8 155.8 0 256 0s184 75.8 184 169.1c0 34.1-11.2 65.5-29.8 90.6 15.2 24.6 24 53.7 24 84.7 0 91.1-73.5 164.6-164.6 164.6h-31.2c-13.6 0-24.8-11.2-24.8-24.8s11.2-24.8 24.8-24.8h31.2c63.3 0 115-51.7 115-115 0-21.3-5.7-41.4-15.6-58.7-10.6-18.6-25.6-34.8-44-47.1 19.9-22.1 32-51.1 32-82.9 0-68.4-55.6-124-124-124z"/></svg>
+                    <img src="snapchat.png" alt="Snapchat Profile" class="icon-img">
                     <span>Join Snapchat</span>
                 </div>
                 <span>→</span>
@@ -119,7 +129,7 @@
             <!-- Telegram Profile -->
             <a href="https://t.me/YUSEEF_SURCHI" class="btn" target="_blank">
                 <div class="btn-content">
-                    <svg class="icon-img" viewBox="0 0 24 24" fill="#38bdf8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.02-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.25.38-.51 1.05-.78 4.11-1.79 6.85-2.97 8.22-3.54 3.91-1.63 4.72-1.92 5.25-1.93.12 0 .39.03.56.17.14.12.18.28.2.45-.02.07-.02.13-.04.2z"/></svg>
+                    <img src="telegram1.png" alt="Telegram Profile" class="icon-img">
                     <span>Join Telegram Profile</span>
                 </div>
                 <span>→</span>
@@ -128,7 +138,7 @@
             <!-- Telegram Group -->
             <a href="https://t.me/legend_group21" class="btn" target="_blank">
                 <div class="btn-content">
-                    <svg class="icon-img" viewBox="0 0 24 24" fill="#38bdf8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.02-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.25.38-.51 1.05-.78 4.11-1.79 6.85-2.97 8.22-3.54 3.91-1.63 4.72-1.92 5.25-1.93.12 0 .39.03.56.17.14.12.18.28.2.45-.02.07-.02.13-.04.2z"/></svg>
+                    <img src="telegram1.png" alt="Telegram Group" class="icon-img">
                     <span>Join Telegram Group</span>
                 </div>
                 <span>→</span>
@@ -137,7 +147,7 @@
             <!-- Telegram Channel -->
             <a href="https://t.me/legend_mods33" class="btn" target="_blank">
                 <div class="btn-content">
-                    <svg class="icon-img" viewBox="0 0 24 24" fill="#38bdf8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.02-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.25.38-.51 1.05-.78 4.11-1.79 6.85-2.97 8.22-3.54 3.91-1.63 4.72-1.92 5.25-1.93.12 0 .39.03.56.17.14.12.18.28.2.45-.02.07-.02.13-.04.2z"/></svg>
+                    <img src="telegram2.png" alt="Telegram Channel" class="icon-img">
                     <span>Join Telegram Channel</span>
                 </div>
                 <span>→</span>
