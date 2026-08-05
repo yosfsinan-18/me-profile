@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My - Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 173, 181, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(79, 70, 229, 0.15) 0%, transparent 40%),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 173, 181, 0.3);
+            text-align: center;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #00adb5;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(0, 173, 181, 0.4);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #f8fafc;
+        }
+        p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            border-radius: 12px;
+            background: rgba(30, 41, 59, 0.7);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .btn:hover {
+            background: #00adb5;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 173, 181, 0.5);
+            border-color: #00adb5;
+        }
+        .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .icon-img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Quran Audio Player -->
+    <audio autoplay loop>
+        <source src="https://server11.mp3quran.net/sds/001.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- Main Website Logo -->
+        <img src="logo.png" alt="Logo" class="profile-img">
+        <h1>Yuseef</h1>
+        <p>&lt; All my social accounts are here /&gt;</p>
+
+        <div class="links-list">
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@yuseef_surchi?_r=1&_t=ZS-98cYzDWJTVN" class="btn" target="_blank">
+                <div class="btn-content">
+                    <img src="tiktok.png" alt="TikTok" class="icon-img">
+                    <span>Join TikTok</span>
+                </div>
+                <span>→</span>
+            </a>
+            
+            <!-- Snapchat -->
+            <a href="https://snapchat.com/t/6KjVProO" class="btn" target="_blank">
+                <div class="btn-content">
+                    <img src="snapchat.png" alt="Snapchat" class="icon-img">
+                    <span>Join Snapchat</span>
+                </div>
+                <span>→</span>
+            </a>
+            
+            <!-- Telegram Profile -->
+            <a href="https://t.me/YUSEEF_SURCHI" class="btn" target="_blank">
+                <div class="btn-content">
+                    <img src="telegram1.png" alt="Telegram Profile" class="icon-img">
+                    <span>Join Telegram Profile</span>
+                </div>
+                <span>→</span>
+            </a>
+            
+            <!-- Telegram Group -->
+            <a href="https://t.me/legend_group21" class="btn" target="_blank">
+                <div class="btn-content">
+                    <img src="telegram1.png" alt="Telegram Group" class="icon-img">
+                    <span>Join Telegram Group</span>
+                </div>
+                <span>→</span>
+            </a>
+            
+            <!-- Telegram Channel -->
+            <a href="https://t.me/legend_mods33" class="btn" target="_blank">
+                <div class="btn-content">
+                    <img src="telegram2.png" alt="Telegram Channel" class="icon-img">
+                    <span>Join Telegram Channel</span>
+                </div>
+                <span>→</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
